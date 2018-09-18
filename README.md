@@ -1,10 +1,12 @@
-# Simulation module to perform Random walk simulations in Julia
+# Simulation module to perform random walk simulations
 
 This Julia package allows for performing random walk simulations of 
 stochastic jumps on a periodic grid, consisting of alternating domains with
 varying mobility.
 
 ## Usage
+
+Refer to the official [Julia website](https://julialang.org/) on how to setup a Julia environment on your system.
 
 An exemplary Julia script how to use the packge is give in the file 
 `dom/run.jl`, which should be run like this, to perform simulation for
