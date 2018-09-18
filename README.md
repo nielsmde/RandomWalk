@@ -13,12 +13,13 @@ multiple domain sizes N in parallel:
     julia -p auto run.jl
 
 The produced trajectories are stored as HDF5 files in the repsective subdirecories.
+
 The top level function to perform simualitons is 
 
     RandomWalk.dom_wandom_walk(numtraj, N, time, rate_1=1e-2, rate_2=1)
     
 The parameters `numtraj` and `N` define the number of *particles* to simulate
-and the total size of the grid, where the size of each domain is `N/2`.
+and the total size of the grid,respectively; accordingly, the size of each domain is `N/2`.
 The time steps of the resulting trajectory are defined by the parameter `time`,
-which must not be soaced evenly. The mobility in both domains can be specified by
-the two parameters `rate_1/2`.
+which can be spaced unevenly, if desired. 
+The mobility in both domains can be specified by the two parameters `rate_1/2`.
